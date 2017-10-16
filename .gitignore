@@ -102,3 +102,6 @@ ENV/
 
 # Zip files and the like
 *.zip
+
+# Additions by Andrej
+*.pdf
