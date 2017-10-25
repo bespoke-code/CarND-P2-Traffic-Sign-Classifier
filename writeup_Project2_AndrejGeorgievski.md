@@ -65,7 +65,7 @@ as I expected the convolutional filters to pick some of them up.
 
 Here is an example of 3 traffic sign images before and after the preprocessing step.
 
-![raw and preprocessed images](/home/andrej/git/CarND-P2-Traffic-Sign-Classifier/data/data-preprocessed.png)
+![raw and preprocessed images](./data/data-preprocessed.png)
 
 While working on the project I was also considering an alternative preprocessing technique which only normalized each image by 
 subtracting the mean from each grayscaled pixel, then dividing by the standard deviation. 
