@@ -1,8 +1,7 @@
-#Traffic Sign Recognition
+# Traffic Sign Recognition
 
 ## Project Writeup
 
----
 
 **Build a Traffic Sign Recognition Project**
 
@@ -17,7 +16,7 @@ The goals / steps of this project are the following:
 
 ## Rubric Points
 
-### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
+Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
 
 ---
 
@@ -182,7 +181,7 @@ This compares roughly to the accuracy on the test set of **92,1%**, given the sm
 It is very interesting to me how the model gave a good prediction on the blurry and low contrast signs images,
 but failed to recognize the stop sign in the corresponding image.
 
-#### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
+#### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. 
 
 The code for making predictions on my final model is located in the last cell of the Ipython notebook.
 
@@ -191,7 +190,8 @@ For the first image, the model is relatively sure that this is a 'Keep right' si
 prediction from the five images found on the Internet. It's interesting to me that the 
 network has the stop sign predicted as the mere fifth on the list, with very low probability.
 This might be due to the fact that there are relatively few stop sign images in the training set.
-Agumenting the dataset to balance out large differences in image numbers among classes may fix this issue.
+Agumenting the dataset to balance out large differences in image count among classes may fix this issue,
+as discussed in the dataset exploration part in this writeup.
 
 There is one instance (the third image) where the top prediction is given with less than 50% certainty, but it is
 still correctly predicted. Although low, the certainty of the first candidate is almost double that of 
